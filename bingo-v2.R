@@ -8,7 +8,7 @@
 # open & print the cards with another program based on your preference
 
 generate <- function(quantity, seeded = FALSE, key = 0L){
-        # creates a directory to store generated cards. removes old cards everytime
+    # creates a directory to store generated cards. removes old cards everytime
     # this function is called
     if(!dir.exists("bingocards")) dir.create("./bingocards")
     oldcards <- list.files("./bingocards", full.names = TRUE)
