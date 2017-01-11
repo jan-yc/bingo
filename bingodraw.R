@@ -1,5 +1,5 @@
-# set.seed(key + as.integer(Sys.Date())) as a possible seed?
 draw_order <- sample(1:75, replace=TRUE)
+
 for(k in seq_along(draw_order)) {
       request <- readline("Press Enter to draw the next number, or type 'drawn' to show drawn numbers \n")
       while (request == "drawn") {
